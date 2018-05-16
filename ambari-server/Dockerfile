@@ -8,6 +8,7 @@ RUN apt-get install -y ambari-server
 
 RUN ambari-server setup -s
 
-COPY entrypoint.sh entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod a+x /entrypoint.sh
 
 CMD ["/entrypoint.sh"]

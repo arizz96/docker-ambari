@@ -6,6 +6,7 @@ RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com B9733A7A07513CAD &&
 
 RUN apt-get install -y ambari-agent
 
-COPY entrypoint.sh entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod a+x /entrypoint.sh
 
 CMD ["/entrypoint.sh"]
