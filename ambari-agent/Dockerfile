@@ -8,4 +8,4 @@ RUN apt-get install -y ambari-agent
 
 COPY entrypoint.sh entrypoint.sh
 
-CMD ["./entrypoint.sh"]
+CMD ["/entrypoint.sh"]

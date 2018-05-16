@@ -10,4 +10,4 @@ RUN ambari-server setup -s
 
 COPY entrypoint.sh entrypoint.sh
 
-CMD ["./entrypoint.sh"]
+CMD ["/entrypoint.sh"]
