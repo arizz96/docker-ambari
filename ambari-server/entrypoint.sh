@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ambari-server start
+ambari-server start && tail -f /var/log/ambari-server/ambari-server.log
